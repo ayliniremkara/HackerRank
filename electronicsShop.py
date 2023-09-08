@@ -4,9 +4,6 @@ import os
 import sys
 
 
-#
-# Complete the getMoneySpent function below.
-#
 def getMoneySpent(keyboards, drives, b):
     cost = -1
     drives.sort(reverse=True)
@@ -34,10 +31,6 @@ if __name__ == '__main__':
     keyboards = list(map(int, input().rstrip().split()))
 
     drives = list(map(int, input().rstrip().split()))
-
-    #
-    # The maximum amount of money she can spend on a keyboard and USB drive, or -1 if she can't purchase both items
-    #
 
     moneySpent = getMoneySpent(keyboards, drives, b)
 
